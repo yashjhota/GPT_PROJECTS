@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Mark Attendance ❤️</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="attendance.html">Attendance</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="author.html">Author</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="content">
+        <h2>Attendance Form</h2>
+        <form id="attendanceForm">
+            <label for="studentUSN">Student USN:</label>
+            <input type="text" id="studentUSN" name="studentUSN" autocomplete="off" required>
+            <datalist id="usnList"></datalist>
+            <br><br>
+
+            <label for="studentName">Student Name:</label>
+            <input type="text" id="studentName" name="studentName" readonly required>
+            <br><br>
+
+            <label for="date">Date:</label>
+            <input type="date" id="date" name="date" required>
+            <br><br>
+
+            <label for="courseFilter">Select Course:</label>
+<select id="courseFilter">
+    <option value="All">All Courses</option>
+    <option value="NOSQL">NOSQL</option>
+    <option value="EML">EML</option>
+    <option value="FAI">FAI</option>
+    <option value="BCS">BCS</option>
+    <option value="ACN">ACN</option>
+</select>
+
+            
+            <br><br>
+
+            <label>Status:</label>
+            <input type="checkbox" id="present" name="status" value="present">
+            <label for="present">Present</label>
+            <input type="checkbox" id="absent" name="status" value="absent">
+            <label for="absent">Absent</label>
+            <br><br>
+
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; Made With ❤️ By Yash Jhota</p>
+    </footer>
+</body>
+
+</html>
